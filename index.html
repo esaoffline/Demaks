@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Demaks Servis Ekipmanları</title>
+  <meta name="description" content="Demaks — Araç kaldırma liftleri ve servis ekipmanlarında hızlı ve güvenilir çözümler." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { theme: { extend: { colors: { brand: '#171f44' } } } };</script>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Demaks Servis Ekipmanları">
+  <meta property="og:description" content="Demaks — Araç kaldırma liftleri ve servis ekipmanlarında hızlı ve güvenilir çözümler.">
+  <meta property="og:image" content="assets/DEMAKS.png">
+  <meta property="og:site_name" content="Demaks Servis Ekipmanları">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/DEMAKS.png">
+  <style>
+    body{font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial;background:#f7f7fa;color:#111827}
+    .container{max-width:1200px}
+    .reveal{opacity:0;transform:translateY(12px);transition:opacity .5s ease, transform .5s ease}
+    .reveal.show{opacity:1;transform:none}
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+<div id="ctaBar" class="bg-brand text-white text-sm py-2">
+  <div class="container mx-auto px-4 flex items-center justify-between">
+    <div>Hızlı teklif ve bilgi için WhatsApp’tan yazın.</div>
+    <a href="https://wa.me/905332700516?text=Merhaba%20Demaks%2C%20bilgi%20almak%20istiyorum." class="px-3 py-1 rounded-lg bg-white/10 hover:bg-white/20">WhatsApp</a>
+  </div>
+</div>
+<header id="siteHeader" class="bg-white/90 backdrop-blur border-b border-gray-100 sticky top-0 z-40"></header>
+<main class="flex-1">
+
+<section class="container mx-auto px-4 py-14 grid md:grid-cols-2 gap-10 items-center">
+  <div class="reveal">
+    <!-- BIG LOGO -->
+    <img src="assets/DEMAKS.png" alt="Demaks Logo" class="h-32 md:h-40 w-auto mb-6">
+    <!-- Keep only the tagline -->
+    <p id="heroTagline" class="mt-2 text-lg text-gray-700">Hızlı, Güvenilir, İşin Erbabı</p>
+    <div class="mt-6 flex gap-3">
+      <a href="katalog.html" class="px-5 py-3 rounded-xl bg-brand text-white hover:opacity-90">Kataloğu Gör</a>
+      <a href="iletisim.html" class="px-5 py-3 rounded-xl border border-brand text-brand hover:bg-white">İletişim</a>
+    </div>
+  </div>
+  <div class="reveal">
+    <div class="relative rounded-2xl overflow-hidden shadow-xl">
+      <img id="heroMainImg" src="assets/hero_main.jpg" alt="Bakım & Onarım" class="w-full h-[360px] object-cover" loading="eager">
+      <div class="absolute bottom-3 left-3 bg-white/90 text-brand text-xs px-3 py-1 rounded-full">Bakım &amp; Onarım</div>
+    </div>
+  </div>
+</section>
+
+<section class="py-10 bg-white border-y border-gray-100">
+  <div class="container mx-auto px-4">
+    <h2 class="text-2xl md:text-3xl font-bold">Öne Çıkan Kategoriler</h2>
+    <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <a href="katalog.html" class="reveal group">
+        <div class="rounded-2xl overflow-hidden border bg-gray-50">
+          <img src="assets/cat_kriko.jpg" alt="Krikolar" class="h-52 w-full object-cover group-hover:opacity-95 transition" loading="lazy" width="1600" height="900">
+        </div>
+        <div class="mt-2 font-semibold text-brand">Krikolar</div>
+      </a>
+      <a href="katalog.html" class="reveal group">
+        <div class="rounded-2xl overflow-hidden border bg-gray-50">
+          <img src="assets/cat_havali.jpg" alt="Havalı el aletleri" class="h-52 w-full object-cover group-hover:opacity-95 transition" loading="lazy" width="1600" height="900">
+        </div>
+        <div class="mt-2 font-semibold text-brand">Havalı El Aletleri</div>
+      </a>
+      <a href="katalog.html" class="reveal group">
+        <div class="rounded-2xl overflow-hidden border bg-gray-50">
+          <img src="assets/cat_lift.jpg" alt="Araç Kaldırma Liftleri" class="h-52 w-full object-cover group-hover:opacity-95 transition" loading="lazy" width="1600" height="900">
+        </div>
+        <div class="mt-2 font-semibold text-brand">Araç Kaldırma Liftleri</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="py-12 container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
+  <div class="reveal">
+    <h2 class="text-2xl md:text-3xl font-bold">Hakkımızda</h2>
+    <p class="mt-4 text-gray-700">Demaks, servis ekipmanları alanında uzman kadrosu ve kalite odaklı yaklaşımla hızlı ve güvenilir çözümler sunar. Bakım, onarım, alım ve satım gibi tüm konular sektördeki tüm konulara geniş bir pencereden bakar.</p>
+    <a href="hakkimizda.html" class="inline-block mt-6 text-brand font-semibold">Daha fazla →</a>
+  </div>
+  <img src="assets/about.jpg" class="reveal rounded-2xl shadow-lg object-cover h-64 w-full" alt="Servis ekipmanları" loading="lazy" width="1200" height="800"/>
+</section>
+
+<section class="py-12 bg-white border-y border-gray-100">
+  <div class="container mx-auto px-4">
+    <h2 class="text-2xl md:text-3xl font-bold">Partnerlerimiz</h2>
+    <p class="text-gray-700 mt-2">Sektörün güvenilir markalarıyla çalışıyoruz.</p>
+    <div id="homePartners" class="mt-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6"></div>
+    <div class="mt-6"><a href="partnerler.html" class="text-brand font-semibold">Tüm partnerleri gör →</a></div>
+  </div>
+</section>
+
+<section class="py-12 container mx-auto px-4">
+  <div class="reveal bg-brand text-white rounded-2xl p-6 md:p-10 flex flex-col md:flex-row items-center justify-between gap-4">
+    <div>
+      <h3 class="text-2xl font-bold">Hızlı teklif almak ister misiniz?</h3>
+      <p class="text-white/80">WhatsApp üzerinden hemen ulaşın.</p>
+    </div>
+    <a href="https://wa.me/905332700516?text=Merhaba%20Demaks%2C%20teklif%20almak%20istiyorum." class="px-5 py-3 rounded-xl bg-white text-brand font-semibold">WhatsApp ile Yaz</a>
+  </div>
+</section>
+
+</main>
+<footer id="siteFooter" class="bg-white border-t border-gray-100 mt-12"></footer>
+<button id="toTop" aria-label="Yukarı çık" class="fixed bottom-5 right-5 hidden rounded-full w-12 h-12 grid place-items-center bg-brand text-white shadow-lg">↑</button>
+<div id="cookieBar" class="fixed inset-x-0 bottom-0 z-50 hidden">
+  <div class="container mx-auto px-4 pb-4">
+    <div class="bg-white border border-gray-200 shadow-lg rounded-2xl p-4 flex flex-col sm:flex-row gap-3 items-center justify-between">
+      <p class="text-sm text-gray-700">Deneyiminizi iyileştirmek için çerezleri kullanıyoruz. Devam ederek <a href="gizlilik.html" class="text-brand underline">Gizlilik Politikası</a>'nı kabul etmiş olursunuz.</p>
+      <div class="flex gap-2">
+        <button id="cookieDecline" class="px-4 py-2 rounded-xl border border-gray-300">Reddet</button>
+        <button id="cookieAccept" class="px-4 py-2 rounded-xl bg-brand text-white">Kabul Et</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="assets/app.js" defer></script>
+</body>
+</html>
