@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Partnerlerimiz — Demaks</title>
+  <meta name="description" content="Birlikte çalıştığımız markalar." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { theme: { extend: { colors: { brand: '#171f44' } } } };</script>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Partnerlerimiz — Demaks">
+  <meta property="og:description" content="Birlikte çalıştığımız markalar.">
+  <meta property="og:image" content="assets/DEMAKS.png">
+  <meta property="og:site_name" content="Demaks Servis Ekipmanları">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/DEMAKS.png">
+  <style>
+    :root { --brand:#171f44;}
+    body{font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial;background:#f7f7fa;color:#111827}
+    .container{max-width:1200px}
+    .reveal{opacity:0;transform:translateY(12px);transition:opacity .5s ease, transform .5s ease}
+    .reveal.show{opacity:1;transform:none}
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+<div id="ctaBar" class="bg-brand text-white text-sm py-2">
+  <div class="container mx-auto px-4 flex items-center justify-between">
+    <div>Hızlı teklif ve bilgi için WhatsApp’tan yazın.</div>
+    <a href="https://wa.me/905332700516?text=Merhaba%20Demaks%2C%20bilgi%20almak%20istiyorum." class="px-3 py-1 rounded-lg bg-white/10 hover:bg-white/20">WhatsApp</a>
+  </div>
+</div>
+<header id="siteHeader" class="bg-white/90 backdrop-blur border-b border-gray-100 sticky top-0 z-40"></header>
+<main class="flex-1">
+<section class="container mx-auto px-4 py-12">
+  <div class="flex items-end justify-between gap-4">
+    <div>
+      <h1 class="text-3xl font-extrabold text-brand">Partnerlerimiz</h1>
+      <p class="text-gray-700 mt-2">Birlikte çalıştığımız markalar</p>
+    </div>
+    <div class="flex gap-3">
+      <input id="partnerAra" type="search" placeholder="Partner ara..." class="px-4 py-2 rounded-xl border border-gray-300">
+      <select id="partnerSirala" class="px-4 py-2 rounded-xl border border-gray-300">
+        <option value="az">A→Z</option>
+        <option value="za">Z→A</option>
+      </select>
+    </div>
+  </div>
+  <div id="partnersGrid" class="mt-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-6"></div>
+</section>
+</main>
+<footer id="siteFooter" class="bg-white border-t border-gray-100 mt-12"></footer>
+
+<!-- back to top -->
+<button id="toTop" aria-label="Yukarı çık" class="fixed bottom-5 right-5 hidden rounded-full w-12 h-12 grid place-items-center bg-brand text-white shadow-lg">↑</button>
+
+<!-- Cookie/KVKK banner -->
+<div id="cookieBar" class="fixed inset-x-0 bottom-0 z-50 hidden">
+  <div class="container mx-auto px-4 pb-4">
+    <div class="bg-white border border-gray-200 shadow-lg rounded-2xl p-4 flex flex-col sm:flex-row gap-3 items-center justify-between">
+      <p class="text-sm text-gray-700">Deneyiminizi iyileştirmek için çerezleri kullanıyoruz. Devam ederek <a href="gizlilik.html" class="text-brand underline">Gizlilik Politikası</a>'nı kabul etmiş olursunuz.</p>
+      <div class="flex gap-2">
+        <button id="cookieDecline" class="px-4 py-2 rounded-xl border border-gray-300">Reddet</button>
+        <button id="cookieAccept" class="px-4 py-2 rounded-xl bg-brand text-white">Kabul Et</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="assets/app.js" defer></script>
+</body>
+</html>
